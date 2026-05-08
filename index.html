@@ -1,155 +1,251 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <title>Projekt AI-Verktyg</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: auto;
-            line-height: 1.6;
-            background-color: #f5f5f5;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        section {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-        a {
-            color: blue;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekt AI-Verktyg – there's an AI for that.</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 12pt;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 40px;
+      color: #000;
+    }
+    h1 {
+      font-size: 20pt;
+      font-weight: bold;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: 16pt;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 13pt;
+      font-weight: bold;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    a {
+      color: #1155CC;
+    }
+    .image-placeholder {
+      display: block;
+      width: 100%;
+      max-width: 600px;
+      height: 200px;
+      background-color: #f0f0f0;
+      border: 2px dashed #aaa;
+      text-align: center;
+      line-height: 200px;
+      color: #888;
+      font-style: italic;
+      margin: 16px 0;
+    }
+    blockquote {
+      margin: 12px 0 12px 24px;
+      padding: 8px 12px;
+      border-left: 3px solid #ccc;
+      font-style: italic;
+      color: #333;
+    }
+    ul {
+      margin: 8px 0 8px 24px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Projekt AI-Verktyg – There’s an AI for that</h1>
+  <h1>Projekt AI-Verktyg – there's an AI for that.</h1>
 
-<section>
-<h2>Verktyg</h2>
-<p><a href="https://notegpt.io/?via=topaitools" target="_blank">NoteGPT</a></p>
+  <p><a href="https://notegpt.io/?via=topaitools">https://notegpt.io/?via=topaitools</a></p>
 
-<p>
-NoteGPT används för att transkribera olika typer av videos, som från Youtube eller videofiler,
-samt ljudfiler. Det går även att använda funktioner som text-to-speech, sammanfattning av video,
-PDF, PPT, bilder och artiklar. Dessutom finns funktioner för att generera bilder och använda olika AI-modeller.
-</p>
+  <p>NoteGPT används för att transkribera främst olika typer av videos – som från Youtube eller video-fil – samt ljudfiler. Går även att göra text to speech och liknande funktioner samt sammanfattning av ljud och video, PDF, PPT, bilder, böcker och artiklar. Även finns det funktioner för att generera bilder, skapa text och använda olika GPT:er i chatt som ChatGPT, DeepSeek, Claude och Gemini. Samt finns det alla dessa:</p>
 
-<p>
-I denna rapport har jag valt att fokusera på NoteGPT:s funktioner för video,
-specifikt transkribering, sammanfattning och översättning.
-</p>
-</section>
+  <img src="Skärmbild 2026-04-24 091237.png" alt="Verktygets">
 
-<section>
-<h2>Hur används verktyget</h2>
+  <p>Det jag tar fokus på med själva verktyget är dess förmåga att <strong>transkribera</strong>, <strong>sammanfatta</strong> och <strong>översätta</strong> själva texten från en video, speciellt Youtube video.</p>
 
-<h3>Transkribering av Youtube-video</h3>
-<p>
-Man kan använda verktyget utan konto, men funktionerna är begränsade.
-För att transkribera en video klistrar man in en Youtube-länk och klickar på "Generate Transcript".
-Efter några sekunder får man en textversion av videon.
-</p>
+  <h2>Alternativa användningsområden</h2>
 
-<h3>Sammanfattning</h3>
-<p>
-Via "YouTube Video Summarizer" kan man få en sammanfattning av videon genom att klistra in samma länk.
-</p>
+  <p>Även om fokus i denna rapport ligger på transkribering och sammanfattning av Youtube-videos finns det flera andra praktiska användningsfall för NoteGPT. Verktyget kan användas av studenter som snabbt behöver ta del av innehållet i en video utan att titta på den, eller av någon som vill skaffa undertexter till en egen inspelning. Det passar även för att sammanfatta långa PDF-dokument, transkribera inspelade genomgångar, eller av yrkesverksamma som behöver snabbt ta till sig information från video- eller ljudmaterial.</p>
 
-<h3>Översättning</h3>
-<p>
-Med konto kan man översätta transkriptionen till andra språk direkt i verktyget.
-</p>
+  <h2>Användning av verktyget – Use case</h2>
 
-</section>
+  <h3>Mål</h3>
+  <p>Målet var att undersöka hur väl NoteGPT klarar av att transkribera en Youtube-video. För att ordentligt testa verktygets kapacitet valdes en extremt lång video – över 220 minuter – för att se hur bra modellen håller över tid och mängd.</p>
 
-<section>
-<h2>Kostnad</h2>
-<p>
-NoteGPT går att använda gratis, men man får ett begränsat antal "quotas" (ca 15 per månad).
-Varje transkribering använder en quota. Betalversioner ger fler funktioner och snabbare resultat.
-</p>
-</section>
+  <h3>Startpunkt</h3>
+  <p>Startpunkten var följande Youtube-länk: <a href="https://www.youtube.com/watch?v=Oqd8QIFR9p4">https://www.youtube.com/watch?v=Oqd8QIFR9p4</a> (220 min lång video)</p>
 
-<section>
-<h2>Test – Översättning</h2>
-<p>
-Jag testade att översätta en transkriberad text från engelska till finska och jämförde resultat
-med andra AI-verktyg. Resultaten var överlag liknande.
-</p>
+  <h3>Metod för att transkribera en Youtube video</h3>
 
-<p>
-Exempelvis översattes ord som "presto" till "voilà" eller "here it is".
-Trots skillnader i ordval bevarades betydelsen i de flesta fall.
-</p>
+  <p>För att transkribera en Youtube video behövs inte ett konto på NoteGPT, däremot begränsas man till vissa funktioner som visas senare i dokumentet. Quotas behövs för att använda funktioner som att transkribera vilket till sist leder till att ett gratiskonto bör köras med. Beskrivs mer på sida 7-8.</p>
 
-<p>
-Det visar att översättningen fungerar bra, även om formuleringarna varierar mellan olika AI.
-</p>
-</section>
+  <p>Startsida:</p>
+  <img src="Skärmbild 2026-03-31 093434.png" alt="Startsida2">
 
-<section>
-<h2>Övrigt test – PDF</h2>
-<p>
-Jag testade även att sammanfatta och översätta en PDF.
-Resultatet behöll huvudinnehållet, men vissa ord översattes fel.
-Till exempel översattes "redovisning" till "accounting" istället för "report".
-</p>
+  <p>Man kan redan härifrån välja YouTube Video Summarizer och få till text och sammanfattning av video.</p>
 
-<p>
-Det visar att verktyget fungerar, men inte alltid är helt korrekt.
-</p>
-</section>
+  <p>Vad som kan väljas vid AI transcriber.</p>
+  <img src="Skärmbild 2026-03-31 094038.png" alt=" Val vid AI transcriber]</span>">
 
-<section>
-<h2>Analys och slutsats</h2>
+  <p>Youtube to Text och Youtube Transcript Generator leder till i princip samma sak. Från test får samma resultat, bara olika sätt att nämna vad det är.</p>
 
-<p>
-NoteGPT fungerar mycket bra för transkribering av Youtube-videor.
-I de flesta fall stämmer texten överens med vad som sägs, även om vissa meningar ibland kan saknas.
-</p>
+  <h3>Steg för steg – få text från Youtube video</h3>
 
-<p>
-Sammanfattningsfunktionen bevarar huvudinnehållet och är särskilt användbar när man snabbt
-vill få en överblick av en lång video.
-</p>
+  <p>Klicka YouTube to Text eller YouTube Transcript Generator. (<a href="https://notegpt.io/youtube-to-text">https://notegpt.io/youtube-to-text</a>)</p>
 
-<p>
-Verktyget är särskilt användbart för studier. Exempelvis kan man:
-</p>
-<ul>
-<li>snabbt få information från en video</li>
-<li>transkribera genomgångar</li>
-<li>skapa undertexter</li>
-</ul>
+  <p>Sedan skriv in Youtube länk för en video och klicka Generate Transcript.</p>
 
-<p>
-När det gäller översättning bevaras innehållet relativt bra,
-även om vissa ord förändras. Jämfört med andra AI-verktyg som ChatGPT och Gemini
-ger NoteGPT likvärdiga resultat.
-</p>
+  <img src="Skärmbild 2026-03-31 094206.png" alt=" Val vid AI transcriber]</span>">
 
-<p>
-En stor fördel är att allt kan göras i samma verktyg,
-utan att behöva byta mellan olika tjänster.
-</p>
+  <p>När man efteråt kommer till sidan på bilden tar det några sekunder och man får en text för videon.</p>
 
-<p>
-Nackdelar är att vissa funktioner kan ta lång tid och att delar av text ibland försvinner.
-Det gör att verktyget inte alltid är helt pålitligt vid detaljerad analys.
-</p>
+  
 
-<p>
-Sammanfattningsvis är NoteGPT ett effektivt verktyg för att snabbt analysera och bearbeta video,
-men det bör användas med viss försiktighet när exakt information krävs.
-</p>
+  <h3>Video sammanfattning</h3>
 
-</section>
+  <p>Om man vill göra en sammanfattning kan man från start vid AI YouTube vid startsidan klicka in på YouTube Video Summarizer. Pasta in en länk som innan.</p>
+
+  <img src="Skärmbild 2026-03-31 094440.png" alt=" någonting jag vet inte">
+
+  <h2>Översättning av transkription</h2>
+
+  <p>Med ett konto på NoteGPT på vilken prenumeration som helst går det även att översätta transkription till andra språk.</p>
+
+  <p>Hur man gör:</p>
+
+  <p>Man gör exakt likadant som visat innan tills man är i menyn med all text uppskrivet och sedan väljer man att klicka det markerade i bilden och sedan välja språket man vill.</p>
+
+  <img src="Skärmbild 2026-04-14 091048.png" alt=" Val vid AI transcriber]</span>">
+  <img src="Skärmbild 2026-04-14 091337.png" alt=" Val vid AI transcriber]</span>">
+
+  <p>Väljer tyska som exempel.</p>
+
+  <img src="Skärmbild 2026-04-14 091626.png" alt=" Val vid AI transcriber]</span>">
+
+  <h2>Betalning och olika prenumerationer.</h2>
+
+  <p>Så det går att köra gratis med NoteGPT, däremot som tokens får man "quotas", vid gratis versionen får man 15 quotas per månad. Det tar i princip 1 quota per transkribering av en Youtube video, man har fortfarande tillgång till alla funktioner men begränsat. Som man ser i bilden får man också tillgång till nanobanana pro användning i notegpt om man skaffar unlimited.</p>
+
+  <img src="Skärmbild 2026-04-14 094337.png" alt=" Val vid AI transcriber]</span>">
+  <img src="Skärmbild 2026-04-14 094417.png" alt=" Val vid AI transcriber]</span>">
+
+  <p>För det mesta får man bara flera i quotas eller oändligt och premium-credits för att köra med vissa starkare modeller och vissa funktioner (man kan visst få premium-credits på något sätt utan abonnemang men väldigt lite). Exempel är att generera bilder, text to speech och generellt ha bättre modeller för analys av typ en video eller ljud fil som även går med gratisversionen fast troligtvis bättre resultat eller högre hastighet på transkribering och annat.</p>
+
+  <p>Jag anser dock att gratisversionen fungerar väl, sammanfattningarna på dem klipp jag har sänt in stämmer för det mesta till originalmaterialet (vissa små detaljer var smått fel). Det har skett att viss text har skippats ur en video när den har transkriberats, som vissa meningar en karaktär säger men bortsett från det är det rätt med det den har transkriberat.</p>
+
+  <h2>Hur bra översätter den?</h2>
+
+  <p>Jag transkriberade från detta Youtube klipp: <a href="https://www.youtube.com/watch?v=caQEkGE7w4Y">https://www.youtube.com/watch?v=caQEkGE7w4Y</a></p>
+
+  <p>Sedan bestämde jag mig att ta och översätta vissa delar och skicka in till olika modeller (samt kolla en sista gång i Google Translate, som kanske inte är det bästa för långa texter men som en extra koll).</p>
+
+  <p>Sedan efter allt är just översatt översätta det tillbaka till engelska och se hur bra det egentligen översattas (översätter tillbaka med flera verktyg).</p>
+
+  <p><strong>Exempel text 1 i engelska:</strong></p>
+
+  <blockquote>
+    [Music] To forge the perfect weapon, you first need the right metal and plenty of heat. Cool it off and presto. Aw. You made it too quickly, Kai. Be patient. If Father was still here, he'd say I know. No matter how much fire you have, experience isn't something you learn overnight. That may work for you, Nya, but I'm going to be a better blacksmith than Dad ever was. Hmm. Your metal is loud and heavy. Useful to slow one down. Useless in the art of stealth. All tools for a samurai. But nothing for a ninja? Ninja? Ha!
+  </blockquote>
+
+  <p><strong>Översatt med hjälp av NoteGPT till finska:</strong></p>
+
+  <blockquote>
+    [Music] Täydellisen aseen takomiseksi tarvitaan ensin oikeaa metallia ja paljon kuumuutta. Jäähdytä se, ja voilà. Ai. Teit sen liian nopeasti, Kai. Ole kärsivällinen. Jos isä olisi vielä täällä, hän sanoisi: tiedän. Oli kuinka paljon tulta tahansa, kokemusta ei opi yhdessä yössä. Se saattaa toimia sinulla, Nya, mutta mä aion olla parempi seppä kuin isä koskaan oli. Hmm. Sun metalli on kova ja raskas. Hyödyllinen hidastamaan vihollista. Hyödytön stealtin taidossa. Kaikki työkalut samuraille. Mutta ei mitään ninjalle? Ninja? Ha!
+  </blockquote>
+
+  <p>Prompt för tester nedan:</p>
+
+  <blockquote>
+    "Tjena, jag har en bit text som är en transkription från en serie (ninjago) och jag skulle vilja att du översätter denna text från engelska till finska.<br><br>
+    [Music] To forge the perfect weapon, you first need the right metal and plenty of heat. Cool it off and presto. Aw. You made it too quickly, Kai. Be patient. If Father was still here, he'd say I know. No matter how much fire you have, experience isn't something you learn overnight. That may work for you, Nya, but I'm going to be a better blacksmith than Dad ever was. Hmm. Your metal is loud and heavy. Useful to slow one down. Useless in the art of stealth. All tools for a samurai. But nothing for a ninja? Ninja? Ha!"
+  </blockquote>
+
+  <p><strong>Översatt med hjälp av Gemini:</strong></p>
+
+  <blockquote>
+    Täydellisen aseen takomiseen tarvitaan ensin oikeaa metallia ja reilusti lämpöä. Jäähdytä se, ja kas näin. Äh. Teit sen liian nopeasti, Kai. Ole kärsivällinen. Jos isä olisi vielä täällä, hän sanoisi... Tiedän. Olipa sinulla kuinka paljon paloa tahansa, kokemusta ei opita yhdessä yössä. Se saattaa toimia sinulle, Nya, mutta minusta tulee parempi seppä kuin isä koskaan oli. Hmm. Metallisi on äänekästä ja raskasta. Hyödyllistä hidastamiseen. Hyödytöntä hiiviskelytaidossa. Kaikki nämä ovat työkaluja samuraille. Mutta eikö mitään ninjalle? Ninja? Ha!
+  </blockquote>
+
+  <p><strong>Översatt med hjälp av ChatGPT:</strong></p>
+
+  <blockquote>
+    Täydellisen aseen takomiseksi tarvitset ensin oikean metallin ja runsaasti lämpöä.
+    Anna sen jäähtyä ja voilà. Voi ei. Teit sen liian nopeasti, Kai. Ole kärsivällinen. Jos isä olisi vielä täällä, hän sanoisi...
+    Tiedän. Vaikka sinulla olisi kuinka paljon tulta, kokemusta ei opi yhdessä yössä.
+    Se saattaa toimia sinulle, Nya, mutta minusta tulee parempi seppä kuin isä koskaan oli.
+    Hmm. Metallisi on äänekästä ja raskasta. Hyödyllistä hidastamaan jotakuta.
+    Hyödytöntä hiiviskelyn taidossa. Kaikki työkalut samuraille. Mutta ei mitään ninjalle?
+    Ninjalle? Hah!
+  </blockquote>
+
+  <p><strong>Alla översatta tillbaka från finska till engelska med hjälp av Google Translate:</strong></p>
+
+  <p><em>Notegpt:</em></p>
+  <blockquote>
+    [Music] To forge the perfect weapon, you first need the right metal and a lot of heat. Cool it, and voilà. Oops. You did it too fast, Kai. Be patient. If Dad were still here, he'd say: I know. No matter how much fire, experience doesn't come overnight. It might work for you, Nya, but I'm going to be a better blacksmith than Dad ever was. Hmm. Your metal is hard and heavy. Useful for slowing down an enemy. Useless for stealth. All the tools for a samurai. But nothing for a ninja? Ninja? Ha!
+  </blockquote>
+
+  <p><em>Gemini:</em></p>
+  <blockquote>
+    To forge the perfect weapon, you first need the right metal and a lot of heat. Cool it, and here it is. Ugh. You did it too fast, Kai. Be patient. If Dad were still here, he would say... I know. No matter how much fire you have, experience is not gained overnight. It may work for you, Nya, but I will be a better blacksmith than Dad ever was. Hmm. Your metal is loud and heavy. Useful for slowing down. Useless for stealth. All these are tools for a samurai. But nothing for a ninja? Ninja? Ha!
+  </blockquote>
+
+  <p><em>ChatGPT:</em></p>
+  <blockquote>
+    To forge the perfect weapon, you first need the right metal and plenty of heat. Let it cool and voilà. Oh no. You did it too fast, Kai. Be patient. If Dad were still here, he would say... I know. No matter how much fire you have, experience doesn't come overnight. It might work for you, Nya, but I'll be a better blacksmith than Dad ever was. Hmm. Your metal is loud and heavy. Useful for slowing someone down. Useless for stealth. All the tools for a samurai. But nothing for a ninja? Ninja? Hah!
+  </blockquote>
+
+  <h3>Sammanfattning av översättnings test.</h3>
+
+  <p>Saken är att i efterhand är ju själva innehållet kvar med många ord har bytts ut. Ett exempel är att "presto" blir utbytt med antingen "voilá" eller helt enkelt "here it is", men egentligen betyder det ungefär samma sak. Men jag skulle ändå säga att NoteGPT gör en hyfsat bra översättning.</p>
+
+  <h2>Exempel av PDF sammanfattning.</h2>
+
+  <p>Även då jag har fokuserat på transkriberingen och sammanfattningen av video är det ändå lite viktigt att visa ett till verktyg.</p>
+
+  <p>Man klickar in på PDF sammanfattning, lägger upp en PDF fil som visas nedan:</p>
+
+  <img src="Skärmbild 2026-04-28 084132.png" alt=" Val vid AI transcriber]</span>">
+
+  <p>Använder som exempel filen "AI_projekt_vt26_AI-verktyg_02.pdf" vilket är uppgifts PDF:en.</p>
+
+  <p>Resultatet:</p>
+
+  <img src="Skärmbild 2026-04-28 084851.png" alt=" Val vid AI transcriber]</span>">
+
+  <h2>Översättning av PDF</h2>
+
+  <p>Nedan ses ett exempel av samma PDF som är på högra sidan översatt till engelska.</p>
+
+  <img src="Skärmbild 2026-04-28 085452.png" alt=" Val vid AI transcriber]</span>">
+
+  <p>Från mina engelska förmågor verkar huvudinnehållet vara intakt, dock ses det att vissa delar är inte så väl översätt. Ett exempel är att <em>redovisningen</em> översätts till <em>the <strong>accounting</strong></em>. Accounting är en rätt översättning till redovisning när det gäller ekonomisk redovisning men vid det här fallet är det rätta ordet <em>report</em> eller <em>presentation</em>. Sedan som man ser förlorar viss text sin färg, men huvudstrukturen är snarlik.</p>
+
+  <h2>Analys och sammanfattning.</h2>
+
+  <p>NoteGPT fungerar väldigt väl för transkribering av Youtube videos, och skulle tro samma för andra video format och ljudklipp då de lär använda samma modell. Ibland kan transkriberingarna förlora visst innehåll, som genom textning har den på vissa videos tappat lite text. Däremot då jag har jämfört transkriberingen med vad som sägs stämmer transkriberingen. Sedan när det gäller videosammanfattning anser jag att huvudinnehållet bevaras av videon i sammanfattningen. Sedan tänker jag att transkribering och sammanfattning kan vara väldigt bra för studier. Till exempel om man har fått en Youtube video man måste analysera utan tiden att kolla på videon eller utan att kunna lyssna/titta på den och måste läsa. Som att om någon behöver få information från en Youtube video för sina studier snabbt kan de göra en sammanfattning av huvudinnehållet. Är även bra för någon som vill skaffa sig undertexter till en video som de själva eller någon annan har gjort utan att behöva transkribera på egenhand. Eller om någon har lyckats få en inspelning av en genomgång skulle de kunna transkribera eller sammanfatta genomgången för att få ut information i efterhand, vilket är bra för studier. Samma sak skulle kunna gälla för folk som jobbar och behöver information eller privat personer när det gäller samma sak. När det gäller PDF sammanfattning är det bra då man vill sammanfatta en lång PDF då man inte har tid att läsa för olika anledningar, som de listade gällande video. Dock tar det väldigt lång tid att sammanfatta även en relativt kort PDF.</p>
+
+  <p>Från tester av översättning bevarar NoteGPT innehållet relativt bra även då vissa ord tappas vid översättning/ändras bevaras betydelsen och innehållet. Den stod även bra upp mot vissa andra GPT:er som gav antingen ungefär lika bra resultat. Fördelen då med NoteGPT är att du kan transkribera och direkt med samma verktyg översätta utan att behöva byta mellan olika verktyg. Så rätt innehåll bevaras, fungerar då väldigt bra. Gäller ungefär samma för översättningen i PDF fast vissa ord tappar meningen nästan helt, dock innehållet för det mesta bevarat. Fördelen då blir att man direkt har det översatt i dokumentet, tror dock fler verktyg kan göra samma sak.</p>
+
+  <p>Olika betalningsmodeller finns för att göra verktyget smidigare och ge vissa extra funktioner, men huvudfunktionerna finns alltid kvar och blir nämligen enbart förbättrade eller snabbare fast det kan jag inte försäkra med 100%. Troligtvis skulle det fixa problemen med att PDF sammanfattning tar lång tid. Det går mycket väl från mina tester av verktyget att köra med gratis konto, men jag ser var uppgraderingarna kan hjälpa.</p>
+
+  <p>Verktygets största nackdelar var att det kunde ta lång tid för funktioner som översättning och sammanfattning, och att vissa delar tappas. Fördelarna är dock att den faktiskt kan transkribera, översätta på en nivå som bevaras budskapen i orden och sammanfattar på ett begripligt sätt och sammanfattar innehållet i videon. PDF:er gäller det samma sak på sammanfattningen men översättningen verkar ha vissa problem vid vissa ord, då den översätter "rätt" men inte rätt i kontexten i var det ligger i texten.</p>
 
 </body>
 </html>
